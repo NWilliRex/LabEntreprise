@@ -3,6 +3,14 @@ using IdeaManager.Core.Interfaces;
 using IdeaManager.Data.Db;
 using Microsoft.EntityFrameworkCore;
 
+namespace IdeaManager.Data.Repositories
+{
+    public interface IIdeaRepository : IRepository<Idea>
+    {
+
+    }
+}
+
 public class IdeaRepository : IRepository<Idea>
 {
     private readonly IdeaDbContext _context;
